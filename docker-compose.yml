@@ -6,13 +6,7 @@ services:
     volumes:
       - './nginx.conf:/etc/nginx/conf.d/default.conf'
       - './www:/www'
-      - 'letsencrypt:/etc/letsencrypt'
+      - '/etc/letsencrypt:/etc/letsencrypt'
     ports:
       - "80:80"
     command: nginx -g 'daemon off;'
-  certbot:
-    image: certbot/certbot
-    volumes:
-      - letsencrypt:/etc/letsencrypt
-volumes:
-  letsencrypt:
