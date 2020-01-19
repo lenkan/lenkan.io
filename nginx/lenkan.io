@@ -11,8 +11,8 @@ server {
 server {
   listen 443 ssl;
   server_name lenkan.io;
-  root /www;
 
+  root /var/www/lenkan.io;
   ssl_certificate /etc/letsencrypt/live/lenkan.io/fullchain.pem;
   ssl_certificate_key /etc/letsencrypt/live/lenkan.io/privkey.pem;
   include /etc/letsencrypt/options-ssl-nginx.conf;
