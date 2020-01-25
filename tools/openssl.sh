@@ -7,13 +7,14 @@ fi
 
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 out_dir=$1
-cert_file=$out_dir/fullchain.pem
-key_file=$out_dir/privkey.pem
+cert_dir=$out_dir/live/lenkan.io
+cert_file=$cert_dir/fullchain.pem
+key_file=$cert_dir/privkey.pem
 nginx_conf_file=$out_dir/options-ssl-nginx.conf
 ssh_params_file=$out_dir/ssl-dhparams.pem
 
-if [ ! -d $out_dir ]; then
-  mkdir $out_dir
+if [ ! -d $cert_dir ]; then
+  mkdir -p $cert_dir
   echo
 fi
 
