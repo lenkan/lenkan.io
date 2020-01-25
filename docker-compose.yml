@@ -8,12 +8,5 @@ services:
       - ./www:/var/www
       - ./nginx/site.conf:/etc/nginx/conf.d/default.conf
     ports:
-      - 8080:80
-      - 8443:443
-  # certbot:
-  #   image: certbot
-  #   volumes:
-  #     - letsencrypt:/etc/letsencrypt
-
-# volumes: 
-#     letsencrypt
+      - ${HTTP_PORT:-8080}:80
+      - ${HTTPS_PORT:-8443}:443
