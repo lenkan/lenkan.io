@@ -4,6 +4,7 @@ const app = express()
 
 app.use((req, res) => {
   console.log(`Received ${req.method} ${req.url}`)
+  console.dir(req.headers)
   res.status(200);
   res.send({ message: "Hello world" })
 })
