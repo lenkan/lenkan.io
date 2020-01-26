@@ -6,7 +6,13 @@ services:
     volumes:
       - ${LETSENCRYPT:-./.certificates}:/etc/letsencrypt
       - ./www:/var/www
-      - ./nginx/site.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx:/etc/nginx/conf.d
     ports:
       - ${HTTP_PORT:-8080}:80
       - ${HTTPS_PORT:-8443}:443
+  api:
+    build:
+      context: ./services/api
+      dockerfile: Dockerfile
+    environment: 
+      - PORT=3000
