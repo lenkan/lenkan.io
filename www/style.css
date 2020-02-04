@@ -2,3 +2,39 @@ ul {
   list-style: none;
 }
 
+body {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+  max-width: 1080px;
+  margin: auto;
+}
+
+footer {
+  padding-top: 100px;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.literal {
+  color: #ce9178
+}
+
+.simple-icon {
+  filter: invert(0.8);
+  width: 32px;
+  height: 32px;
+}
+
+.list--horizontal {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.list--horizontal > li {
+  display: inline-block;
+}
