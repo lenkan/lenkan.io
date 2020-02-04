@@ -1,11 +1,14 @@
-ul {
-  list-style: none;
+@media screen and (max-width: 900px) {
+  body {
+    font-size: x-large;
+  }
 }
 
 body {
   background-color: #1e1e1e;
   color: #d4d4d4;
   font-family: 'Courier New', Courier, monospace;
+  margin: 2em;
 }
 
 main {
@@ -17,6 +20,15 @@ footer {
   padding-top: 100px;
   max-width: 1080px;
   margin: auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+ul {
+  list-style: none;
 }
 
 .literal {
