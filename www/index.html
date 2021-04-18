@@ -1,62 +1,74 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>lenkan.io</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-<head>
-  <title>lenkan.io</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+  <body>
+    <header class="header">
+      <nav class="menu site-wide">
+        <header class="menu__header">
+          <label class="menu__toggle" for="main_menu_toggle_checkbox">
+            <img class="menu__icon" src="img/hamburger.svg" />
+          </label>
+          <a href="/">lenkan.io</a>
+        </header>
 
-<body>
-  <header class="header">
-    <nav class="menu site-wide">
-      <header class="menu__header">
-        <label class="menu__toggle" for="main_menu_toggle_checkbox">
-          <img class="menu__icon" src="img/hamburger.svg" />
-        </label>
-        <a href="/">lenkan.io</a>
-      </header>
+        <input
+          id="main_menu_toggle_checkbox"
+          type="checkbox"
+          class="menu__toggle_checkbox"
+        />
+        <ul class="menu__list">
+          <li class="menu__list_item">
+            <a href="#about" class="menu__link">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <input id="main_menu_toggle_checkbox" type="checkbox" class="menu__toggle_checkbox" />
-      <ul class="menu__list">
-        <li class="menu__list_item">
-          <a href="#about" class="menu__link">About</a>
+    <main class="main site-wide">
+      <h1>Daniel Lenksj&ouml;</h1>
+      <p class="literal">Hello</p>
+    </main>
+
+    <footer class="site-wide">
+      <ul class="list--horizontal">
+        <li>
+          <a href="https://github.com/lenkan">
+            <img
+              class="simple-icon"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/lenksjo/">
+            <img
+              class="simple-icon"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://stackoverflow.com/users/2537247/lenkan">
+            <img
+              class="simple-icon"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/stackoverflow.svg"
+            />
+          </a>
         </li>
       </ul>
-    </nav>
-  </header>
-
-  <main class="main site-wide">
-    <h1>
-      Daniel Lenksj&ouml;
-    </h1>
-    <p class="literal">
-      Hello
-    </p>
-  </main>
-
-  <footer class="site-wide">
-    <ul class="list--horizontal">
-      <li>
-        <a href="https://github.com/lenkan">
-          <img class="simple-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
-        </a>
-      </li>
-      <li>
-
-        <a href="https://www.linkedin.com/in/lenksjo/">
-          <img class="simple-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" />
-        </a>
-      </li>
-      <li>
-        <a href="https://stackoverflow.com/users/2537247/lenkan">
-          <img class="simple-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/stackoverflow.svg" />
-        </a>
-      </li>
-    </ul>
-  </footer>
-</body>
-
-
+    </footer>
+  </body>
 </html>
