@@ -26,4 +26,4 @@ jobs:
       - name: Deploy
         run: ./scripts/deploy.sh github@$SERVER
         env:
-          SERVER: "68.183.221.185"
+          SERVER: lenkan.io
