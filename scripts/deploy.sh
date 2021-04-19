@@ -27,4 +27,4 @@ server {
         }
 }" | ssh $HOST "tee /etc/nginx/sites-available/default"
 
-ssh -t $HOST "sudo nginx -s reload"
+ssh $HOST "sudo nginx -s reload"
