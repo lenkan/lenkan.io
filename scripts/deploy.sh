@@ -1,6 +1,11 @@
 #!/bin/bash
 
-HOST=${HOST:-lenkanio}
+if [ -z "$1" ]; then
+        echo "Usage $0 [user@]hostname";
+        exit 1;
+fi;
+
+HOST=$1
 DEPLOYMENT_NAME=deployment_$(date --utc +%s)
 DEPLOYMENT_DIR=/var/www/lenkan.io/$DEPLOYMENT_NAME
 
